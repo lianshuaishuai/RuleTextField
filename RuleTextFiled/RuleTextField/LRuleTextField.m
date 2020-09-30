@@ -98,7 +98,15 @@
     }
     return self;
 }
-
+-(instancetype)init{
+    if (self = [super init]) {
+        self.manger = [[LRuleTextFieldManger alloc]init];
+        [self setUpTextField];
+        //监听输入文字的变化
+        [self addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
+    }
+    return self;
+}
 -(void)setUpTextField{
     self.delegate = self;
     self.font = self.manger.text_font;
@@ -106,6 +114,7 @@
     self.backgroundColor = self.manger.ground_corlor;
     self.secureTextEntry = self.manger.secureTextEntry;
     self.layer.cornerRadius = self.manger.cornerRadius;
+    if (self.manger.tintColor) self.tintColor = self.manger.tintColor;
     
     //修改占位符的颜色以及大小
     [self setUpPlaceholder];

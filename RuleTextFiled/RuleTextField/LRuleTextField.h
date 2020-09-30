@@ -59,6 +59,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)UIColor *ground_corlor;
 
 /**
+ 
+ 光标颜色
+ */
+@property(nonatomic, strong)UIColor *tintColor;
+
+/**
  圆角
  */
 @property(nonatomic, assign)CGFloat cornerRadius;

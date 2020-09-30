@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EAF0F42B2521A71800379979 /* NSString+LSString.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF0F4292521A71800379979 /* NSString+LSString.m */; };
+		EAF0F43425245B2B00379979 /* LRuleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF0F43325245B2B00379979 /* LRuleTextView.m */; };
 		EAF7BAE5251D83FE002EF6F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF7BAE4251D83FE002EF6F1 /* AppDelegate.m */; };
 		EAF7BAEB251D83FE002EF6F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF7BAEA251D83FE002EF6F1 /* ViewController.m */; };
 		EAF7BAEE251D83FE002EF6F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF7BAEC251D83FE002EF6F1 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		EAF0F4292521A71800379979 /* NSString+LSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSString.m"; sourceTree = "<group>"; };
 		EAF0F42A2521A71800379979 /* NSString+LSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LSString.h"; sourceTree = "<group>"; };
+		EAF0F43225245B2B00379979 /* LRuleTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRuleTextView.h; sourceTree = "<group>"; };
+		EAF0F43325245B2B00379979 /* LRuleTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRuleTextView.m; sourceTree = "<group>"; };
 		EAF7BAE0251D83FE002EF6F1 /* RuleTextFiled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuleTextFiled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF7BAE3251D83FE002EF6F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAF7BAE4251D83FE002EF6F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 			children = (
 				EAF7BB22251D851B002EF6F1 /* LRuleTextField.h */,
 				EAF7BB23251D851B002EF6F1 /* LRuleTextField.m */,
+				EAF0F43225245B2B00379979 /* LRuleTextView.h */,
+				EAF0F43325245B2B00379979 /* LRuleTextView.m */,
 				EAF7BB28251DD585002EF6F1 /* LSSTextField.h */,
 				EAF7BB29251DD585002EF6F1 /* LSSTextField.m */,
 				EAF0F42A2521A71800379979 /* NSString+LSString.h */,
@@ -290,6 +295,7 @@
 				EAF0F42B2521A71800379979 /* NSString+LSString.m in Sources */,
 				EAF7BAE5251D83FE002EF6F1 /* AppDelegate.m in Sources */,
 				EAF7BAF6251D8401002EF6F1 /* main.m in Sources */,
+				EAF0F43425245B2B00379979 /* LRuleTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
