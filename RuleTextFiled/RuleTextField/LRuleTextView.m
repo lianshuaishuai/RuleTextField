@@ -42,6 +42,7 @@
             mangerBlock(self.manger);
         }
         [self setUpSubView];
+        [self setUp];
     }
     return self;
 }
@@ -49,6 +50,7 @@
     if (self = [super init]) {
         self.manger = [[LRuleTextViewManger alloc]init];
         [self setUpSubView];
+        [self setUp];
     }
     return self;
 }
@@ -64,6 +66,8 @@
 }
 
 -(void)setUp{
+    self.layer.cornerRadius = self.manger.cornerRadius;
+    self.clipsToBounds = YES;
     if (self.manger.tintColor) self.tintColor = self.manger.tintColor;
 }
 
@@ -98,7 +102,7 @@
     self.placeholderLabel.hidden = textView.text.length ? YES : NO;
     [self setUpBottomAttributedString];
     //超过最大内容设置为yes （点击提交的时候判断此字段即可）
-    if (textView.text.length > self.manger.maxNum)self.exceedMax = YES;
+    if (textView.text.length > self.manger.maxNum && self.manger.maxNum)self.exceedMax = YES;
 }
 
 -(UITextView *)textView{
