@@ -144,7 +144,7 @@
 
 // 设置底部文字的颜色
 -(void)setUpBottomAttributedString{
-    
+    if (!self.manger.maxNum) return;
     self.manger.bottom_num_color = (self.textView.text.length > self.manger.maxNum) ? [UIColor redColor] : self.manger.bottom_all_color;
    
     NSMutableAttributedString *all_Attributed = [NSString setUpLabelAttri:[NSString stringWithFormat:@"/%ld",self.manger.maxNum] andFloat:self.manger.bottom_font_float andCor:self.manger.bottom_all_color];
